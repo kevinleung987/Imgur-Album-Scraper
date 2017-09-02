@@ -17,11 +17,12 @@ def scrape(album_id):
         os.makedirs(directory)  # Creates the full directory for the album
     imageList = []
     print('Loading Album: '+album_id)
+    # Loading the album with Requests
     link = 'https://api.imgur.com/3/album/' + album_id
     header = {'Authorization': 'Client-Id '+client_id}
     album = requests.get(link, headers=header).json()
     if not album['success']:
-        return album['data']['error']
+        raise Exception(album['data']['error'])
     # Scrape image links from the album
     for image in album['data']['images']:
         imageList.append(image['link'])
