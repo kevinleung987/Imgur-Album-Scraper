@@ -23,8 +23,8 @@ def scrape(album_id):
     if not album['success']:
         return album['data']['error']
     # Scrape image links from the album
-    for x in range(len(album['data']['images'])):
-        imageList.append(album['data']['images'][x]['link'])
+    for image in album['data']['images']:
+        imageList.append(image['link'])
     # Downloads each image and writes to disk
     for image in imageList:
         download = requests.get(image, stream=True)
