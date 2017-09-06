@@ -4,9 +4,9 @@ Python Imgur Scraper that scrapes all the images of an Imgur album into a folder
 - Install Python 3
 - Install the Requests library by running the following command.
 ```sh
-$ python pip -m install requests
+$ python -m pip install -U requests
 ```
-- Replace client_id with your own Imgur API Application Client ID, you can acquire one in this page https://api.imgur.com/oauth2/addclient
+- Replace client_id with your own Imgur API Application Client ID, you can acquire one in this page https://api.imgur.com/oauth2/addclient (Optional)
 - Modify directory_name to what you want, the directory will be created and the album folders will be generated within that directory. An empty string will generate album folders in the same directory as the Python file.
 - Place main.py where you want the album directories to be stored and run it.
 - Input the Imgur album links that you want to download.
