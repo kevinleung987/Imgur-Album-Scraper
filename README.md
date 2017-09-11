@@ -1,5 +1,5 @@
 # Imgur Album Scraper
-Python Imgur Scraper that scrapes all the images of an Imgur album into a folder. If you have already downloaded the album in the past, duplicate images won't be overwritten and only new additions to the album will be downloaded. Should work with any kind of file hosted inside of an Imgur album.
+An Album Scraper for Imgur that utilizes the Imgur API to download all the images of an Imgur album into a folder. If you have already downloaded the album in the past, duplicate images won't be overwritten and only new additions to the album will be downloaded. Should work with any kind of file that can be found inside of an Imgur album.
 # Instructions/How to Use
 - Install Python 3
 - Install the Requests library by running the following command.
